@@ -64,6 +64,12 @@ def improved():
 
     return f"Hello {NAME}"
 
+import rook
+
+rook.start(
+    token="d43f5b2b4a48c3671bbc18f9c0534a9b78ddecbafc423a716fd0ac65cb5af5fd",
+    labels={"env": "dev"}
+)
 
 # [START cloudrun_broken_service]
 # [START run_broken_service]

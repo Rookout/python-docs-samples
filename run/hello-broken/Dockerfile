@@ -33,6 +33,7 @@ RUN pip install -r requirements.txt
 ENV APP_HOME /app
 WORKDIR $APP_HOME
 COPY . ./
+COPY .git /.git
 
 # Run the web service on container startup.
 # Use gunicorn webserver with one worker process and 8 threads.
